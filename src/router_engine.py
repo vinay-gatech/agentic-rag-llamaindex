@@ -47,13 +47,13 @@ query_engine    = RouterQueryEngine(
     verbose=True,
 )
 
-# response    = query_engine.query("What is the summary of the document?")
-# print(str(response))
-# # print(len(response.source_nodes))
-#
-# response    = query_engine.query("How do agents share information with other agents?")
-# print(str(response))
+response    = query_engine.query("What is the summary of the document?")
+print(str(response))
+# print(len(response.source_nodes))
 
-from utils import query_engine as qe
-res = qe.query("Tell me about the ablation study results?")
+response    = query_engine.query("How do agents share information with other agents?")
+print(str(response))
+
+
+res = query_engine.query("Tell me about the ablation study results?")
 print(str(res))
